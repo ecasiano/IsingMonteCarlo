@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load data
-data = np.loadtxt("../../Data/L_16_T_3.0.dat")  # beta=1
-# data = np.loadtxt("../../Data/L_16_T_0.3333333333333333.dat")  # beta=3
+# data = np.loadtxt("Data/L_16_T_1.0.dat")               # beta=1
+data = np.loadtxt("/Users/ecasiano/Dropbox/PHYS642-StatMech2/Data/L_16_T_1.0.dat")  # beta=3
 
 # Retrieve energy data
 E = data[:,0]
@@ -25,4 +25,4 @@ plt.ylabel(r'$\langle e \rangle$',labelpad=0.0)
 plt.xlabel("Sample Number");
 plt.legend(frameon=False)
 #plt.ticklabel_format(axis="y", style="sci", scilimits=(0,0))
-plt.savefig("../Figures/a_equilibration_beta_3.0.svg",dpi=400)
+plt.savefig("Figures/a_equilibration_beta_3.0.svg",dpi=400)
