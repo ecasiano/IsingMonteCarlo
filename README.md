@@ -8,3 +8,11 @@ To run the code:
 4. Run the following command
 
  julia isingMC.jl
+
+To run the scripts:
+
+1. Download and install the latest version of the Python programming language
+2. Move into the Scripts directory
+3. Run
+
+ python <name_of_script>.py
