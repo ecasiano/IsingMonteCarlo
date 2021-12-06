@@ -22,5 +22,17 @@ To run the scripts:
 #### [Figure 01: Equilibration at high temperature](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.svg)
 <img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.svg">
 
-#### [Figure 02: Equilibration low temperature](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.svg)
-<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.svg">
+#### [Figure 02: Equilibration low temperature](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_3.0.svg)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_3.0.svg">
+
+#### [Figure 03: Energy per spin](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/b_e_per_spin.svg)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/b_e_per_spin.svg">
+
+#### [Figure 04: Magnetization per spin](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/b_m_per_spin.svg)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/b_m_per_spin.svg">
+
+#### [Figure 05: Specific Heat per spin](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/c_specific_heat.svg)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/c_specific_heat.svg">
+
+#### [Figure 06: Specific Heat per spin](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/c_specific_heat.svg)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/c_specific_heat.svg">
