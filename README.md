@@ -19,5 +19,8 @@ To run the scripts:
  
  ### Figures
 
-#### [Figure 01: Equilibration](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.pdf)
-<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.pdf">
+#### [Figure 01: Equilibration at high temperature](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.svg)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.svg">
+
+#### [Figure 02: Equilibration low temperature](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.svg)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.svg">
