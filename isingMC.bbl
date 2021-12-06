@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+
+\bibitem{PhysRev.65.117}
+L.~Onsager.
+\newblock \enquote{Crystal statistics. i. a two-dimensional model with an
+  order-disorder transition.}
+\newblock Phys. Rev. \textbf{65}, 117 (1944).
+\bibAnnoteFile{PhysRev.65.117}
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRev.65.117}
+
+\bibitem{giordanoCompPhys}
+H.~N. N.~Giordano.
+\newblock \emph{Computational Physics, 2nd Edition, Chapter 8} (2006).
+\bibAnnoteFile{giordanoCompPhys}
+
+\bibitem{doi:10.1063/1.1699114}
+N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller.
+\newblock \enquote{Equation of state calculations by fast computing machines.}
+\newblock The Journal of Chemical Physics \textbf{21}, 1087 (1953).
+\bibAnnoteFile{doi:10.1063/1.1699114}
+\newline\urlprefix\url{https://doi.org/10.1063/1.1699114}
+
+\bibitem{2010}
+V.~Ambegaokar and M.~Troyer.
+\newblock \enquote{Estimating errors reliably in monte carlo simulations of the
+  ehrenfest model.}
+\newblock American Journal of Physics \textbf{78}, 150 (2010).
+\bibAnnoteFile{2010}
+\newline\urlprefix\url{http://dx.doi.org/10.1119/1.3247985}
+
+\end{thebibliography}
