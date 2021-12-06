@@ -31,8 +31,12 @@ To run the scripts:
 #### [Figure 04: Magnetization per spin](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/b_m_per_spin.svg)
 <img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/b_m_per_spin.svg">
 
-#### [Figure 05: Specific Heat per spin](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/c_specific_heat.svg)
+#### [Figure 05: Specific seat per spin](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/c_specific_heat.svg)
 <img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/c_specific_heat.svg">
 
-#### [Figure 06: Specific Heat per spin](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/c_specific_heat.svg)
-<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/c_specific_heat.svg">
+#### [Figure 06: Magnetic susceptibility per spin](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/d_susceptibility.svg)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/d_susceptibility.svg">
+
+#### [Figure 07: Collapsed susceptibility](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/d_collapse.svg)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/d_collapse.svg">
+
