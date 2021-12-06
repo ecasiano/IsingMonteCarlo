@@ -19,5 +19,5 @@ To run the scripts:
  
  ### Figures
 
-#### [Figure 01: t-V Model Phase Diagram](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.pdf)
+#### [Figure 01: Equilibration](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.pdf)
 <img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.pdf">
