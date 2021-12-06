@@ -16,3 +16,8 @@ To run the scripts:
 3. Run
 
  python <name_of_script>.py
+ 
+ ### Figures
+
+#### [Figure 01: t-V Model Phase Diagram](https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.pdf)
+<img src="https://github.com/ecasiano/IsingMonteCarlo/blob/main/Figures/a_equilibration_beta_1.0.pdf">
