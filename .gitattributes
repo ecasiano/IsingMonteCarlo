@@ -3,4 +3,4 @@
 
 # Ignore Python language for repo preview (only used for post-processing)
 *.julia linguist-detectable=true
-*.python linguist-language=Julia
+*.python linguist-detectable=false
