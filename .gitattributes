@@ -2,4 +2,5 @@
 * text=auto
 
 # Ignore Python language for repo preview (only used for post-processing)
-*.Python linguist-detectable=false
+*.julia linguist-detectable=true
+*.python linguist-detectable=false
