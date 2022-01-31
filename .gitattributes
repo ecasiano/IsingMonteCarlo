@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Ignore Python language for repo preview (only used for post-processing)
+*.python linguist-detectable=false
