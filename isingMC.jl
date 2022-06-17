@@ -1,10 +1,12 @@
 # Classical Monte Carlo Simulation for Ising Model
+using Random
 
 "--------------------- Function Definitions (start) ---------------------------"
 
 function create_ising_lattice(L)
-    "Creates an L x L of Ising spins (all pointing up; +1)"
-    ones(Int64,L,L)
+    "Creates L x L of randomly orientedIsing spins"
+    #ones(Int64,L,L)
+    rand([-1, 1], L, L)
 end
 
 "------------------------------------------------------------------------------"
@@ -55,12 +57,12 @@ function spin_flip!(ising_lattice, L, T)
     E_flip = E_new - E_old
 
     # Metropolis sampling
-    R = exp(-E_flip/T)
-    #print(R)
-    if rand() < R
+    if E_flip < 0
+        ising_lattice[x,y] *= (-1)
+    elseif rand() < exp(-E_flip/T)
         ising_lattice[x,y] *= (-1)
     end
-
+    
     return nothing
 
 end
@@ -110,14 +112,21 @@ end
 "---------------------------- Main (start) ------------------------------------"
 
 # Ising Lattice Parameters (want to make command line parameters later)
-L = 8
-T = 1.0
+L = 10
+T = 2.25
 K_B = 1
+seed = 0
+Random.seed!(seed)
 
 # Simulation parameters    (want to make command line parameters later)
 sweep = L*L
-bins_wanted = 1024*8
-bin_size = 2500
+bins_wanted = 200*1000
+bin_size = 100
+
+equilibration_steps = 100000
+
+# number of Monte Carlo sweeps to skip before performing a measurement
+skip = 10
 
 # Initialize Ising lattice
 ising_lattice = create_ising_lattice(L)
@@ -129,9 +138,18 @@ E_squared = 0
 M_squared = 0 
 
 # Open file to write data to
-open("L_$(L)_T_$(T).dat","w") do f
+open("L_$(L)_T_$(T)_seed_$(seed).dat","w") do f
+    if (seed==0)
     write(f, "# L=$(L), T=$(T) \n")
     write(f, "# E      M        E^2        M^2\n")
+    end
+
+# Open file to write configurations to
+open("L_$(L)_T_$(T)_spins_seed_$(seed).dat","w") do g
+    if (seed==0)
+    write(g, "# L=$(L), T=$(T) \n")
+    write(g, "# Ising configs (vectorized) \n")
+    end
 
 # Monte Carlo loop
 let m = 0              
@@ -146,7 +164,7 @@ let m = 0
                 spin_flip!(ising_lattice,L,T)
 
                 # Measure quantities of interest
-                if (m%sweep==0)
+                if (m%(sweep*skip)==0 && m>equilibration_steps)
 
                     global E += get_energy(ising_lattice,L)
                     global M += get_magnetization(ising_lattice,L)
@@ -161,7 +179,19 @@ let m = 0
                         # Write data if accumulator has 'bin_size no. of samples
                         write(f, "$(E/bin_size)    $(M/bin_size)     $(E_squared/bin_size)     $(M_squared/bin_size)\n")
 
+                        # Write spin configs if accumulator has 'bin_size no. of samples
+                        for i in 1:L
+                            for j in 1:L
+                                write(g,"$(ising_lattice[i,j]) ")
+                            end
+                        end
+                        write(g,"\n")
+
                         bins_written += 1
+                        if (bins_written%1000==0)
+                            println("bins_written: ",bins_written)
+                        end
+
 
                         # Reset accumulators and measurement ctr
                         global E = 0
@@ -172,6 +202,7 @@ let m = 0
 
                         
                     end # end of writing-to-disk if-statement
+                    end # end of writing-spins-to-disk if-statement 
                 end # end of perform-measurement-and-accumulate if-statemenet
             end # end of main Monte Carlo (while) loop
         end # end of let measurement_ctr
